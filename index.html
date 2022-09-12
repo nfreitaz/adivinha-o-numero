@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html pt="br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./Imagem/favicon.ico" type="image/x-icon">
+
+        <title>Qual é o número?</title>
+    </head>
+    <body>
+        <header>
+            <h1>Você advinha qual é o número?</h1>
+        </header>
+        <main>
+            <div>
+                <figure>
+                    <img src="./Imagem/charada2.jpg" alt="">
+                </figure>
+            </div>
+            <div>
+                <label for="pergunta">Digite um número de 0 a 10 para tentar adivinhar.</label>
+                <input id="number" type="number" placeholder="De 0 a 10" onchange="troca()">
+                <button class="button" type="submit" onclick="adivinhaNumero()">Enviar</button>
+            </div>
+            <div>
+                <h2 id="chute"></h2>
+                <h2 id="chuteDois"></h2>
+                <h2 id="chuteTres"></h2>
+                <h2 id="resultado"></h2>
+                
+            </div>
+            
+        </main>
+        
+        
+
+        <script src="./index.js"></script>
+    </body>
+</html>
